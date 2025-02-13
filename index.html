@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Question</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fce4ec;
+            color: #5e35b1;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #c2185b;
+        }
+        .message {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+        .question {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #ab47bc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+        }
+        button:hover {
+            background-color: #8e24aa;
+        }
+        .response {
+            font-size: 22px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Valentine’s Day Question</h1>
+
+    <div class="message">
+        <p>Teminikan, I’m happy for the season to gift you as an expression of my love. Today, I’m grateful for growth and our aligned purpose. You are a constant reminder that God cares for me. If He can bring His best (you) my way as an intentional expression of His love, then there’s nothing He won’t do for us.<br>
+        I chose you yesterday, I choose you today, and I’ll choose you forever. You are the rhythm in my heart, my haven, and my precious gift.<br>
+        Thank you for loving me so beautifully, sweetie!<br>
+        Happy Valentine’s Day my forever, my always. ❤️</p>
+    </div>
+
+    <div class="question">
+        <p>Teminikan, will you be my Valentine?</p>
+    </div>
+
+    <button onclick="showResponse('yes')">Yes</button>
+    <button onclick="showResponse('no')">No</button>
+
+    <div class="response" id="response"></div>
+
+    <script>
+        function showResponse(answer) {
+            var responseText = "";
+            if (answer === "yes") {
+                responseText = "O jebi";
+            } else if (answer === "no") {
+                responseText = "Damn, I thought we had something going";
+            }
+            document.getElementById("response").innerHTML = responseText;
+        }
+    </script>
+
+</body>
+</html>
